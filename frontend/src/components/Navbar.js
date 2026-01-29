@@ -1,11 +1,10 @@
 import React from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 
 export default function Navbar() {
   const { user, logout } = useAuth();
   const navigate = useNavigate();
-  const location = useLocation();
 
   const handleLogout = () => {
     logout();

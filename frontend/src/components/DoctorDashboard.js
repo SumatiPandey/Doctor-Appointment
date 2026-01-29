@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { appointmentAPI, doctorAPI } from "../services/api";
+import { appointmentAPI } from "../services/api";
 import Navbar from "./Navbar";
 
 export default function DoctorDashboard() {

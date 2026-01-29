@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import { doctorAPI, appointmentAPI } from "../services/api";
 import Navbar from "./Navbar";
 
@@ -14,7 +13,6 @@ export default function PatientDashboard() {
   const [reason, setReason] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
-  const navigate = useNavigate();
 
   const timeSlots = [
     "9:00 AM",

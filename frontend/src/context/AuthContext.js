@@ -14,7 +14,7 @@ export const AuthProvider = ({ children }) => {
       setToken(savedToken);
       // Decode token to get user info (basic implementation)
       try {
-        const decoded = JSON.parse(atob(savedToken.split(".")[1]));
+        JSON.parse(atob(savedToken.split(".")[1]));
         // You might want to validate token with backend here
       } catch (error) {
         console.error("Invalid token");
